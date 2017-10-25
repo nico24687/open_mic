@@ -24,4 +24,11 @@ class User
     end
   end 
 
+  def learn_routine(filename)
+    contents = CSV.open(filename, headers: true)
+    contents.each do |row|
+      self.jokes << row
+    end 
+  end 
+
 end
