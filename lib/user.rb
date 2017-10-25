@@ -3,5 +3,10 @@ class User
 
   def initialize(name)
     @name = name
+    @jokes = []
   end
+
+  def jokes 
+    @jokes
+  end 
 end
